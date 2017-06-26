@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Netflix Show Sync | Daredevil</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+		<div class="mobile-overlay">
+			<h1>Netflix Second Screen App</h1>
+			<p>mobile not supported</p>
+			<p>Use a tablet or widen your browser to view</p>
+		</div>
+		<div class="ipad-landscape">
+			<div class="ipad-screen">
+				<div class="overlay">
+					<a href="#" class="logo"></a>
+					<a href="#" class="signin">Sign In</a>
+					<form class="signinform">
+						<div class="signinform-field fadeIn">
+							<label for="form-email">Email address</label>
+							<input id="form-email" type="email" />
+						</div>
+						<div class="signinform-field fadeIn">
+							<label for="form-password">Password</label>
+							<input id="form-password" type="password" />
+						</div>
+						<div class="fadeIn">
+							<a href="#" id="btn-submit" type="submit" class="signin-submit">Sign in</a>
+							<a href="#" class="link-register">forgot password?</a>
+						</div>
+					</form>
+				</div>
+				<video poster="./assets/img/form-bg.png" autoplay="" muted="" loop="">
+					<source src="./assets/img/dd_showsync.mp4" type="video/mp4">
+					<source src="./assets/img/dd_showsync_form.webm" type="video/webm">
+				</video>
+				<!-- goo filters -->
+				<div id="app" class="hidden">
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+					    <defs>
+					      <filter id="shadowed-goo">  
+					          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+					          <!-- <feGaussianBlur in="goo" stdDeviation="3" result="shadow" /> -->
+					          <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+					         <!--  <feOffset in="shadow" dx="1" dy="1" result="shadow" /> -->
+					          <feBlend in2="shadow" in="goo" result="goo" />
+					          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+					      </filter>
+					      <filter id="goo">
+					          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+					          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+					          <feBlend in2="goo" in="SourceGraphic" result="mix" />
+					      </filter>
+					    </defs>
+					</svg>
+					<img class="menu-top-left" src="./assets/img/menu-top-left.png">
+					<img class="menu-top-right" src="./assets/img/menu-top-right.png">
+					<img id="shazam-logo" class="shazam" src="./assets/img/pngs/shazam-active.png">
+					<!-- menus -->
+					<div id="slider"></div>
+					<figure class="play-button" id="playPause"></figure>
+					<figure class="menu-button "></figure>
+					<figure class="menu-open filter">
+						<a class="menu-item-settings"></a>
+						<a class="menu-item-episodes"></a>
+						<a class="menu-item-rewind"></a>
+						<a class="menu-item-volume"></a>
+						<figure class="episodes"></figure>
+					</figure>			
+					<!-- panels -->
+					<div class="panel" id="panel1">
+						<div class="escape-button"></div>
+						<div class="content-container">
+							<h1>wilson fisk</h1>
+							<div class="fisk-img"></div>
+							<div class="content-info">
+								<ul>
+									<li>Full Name: Wilson Grant Fisk</li>
+									<li>Aliases: <span>Kingpin, The Brainwasher, Harold Howard</span></li>
+									<li>Gender: <span>Male</span></li>
+									<li>Height: <span>6'7"</span></li>
+									<li>Weight: <span>450 lbs(204 kg)</span></li>
+									<li>Citizenship: <span>American</span></li>
+									<li>Powers/Weapons: <span>Super Strength, Fists</span></li>
+									<li>First Comic Appearance: <span>Amazing Spider-Man #50</span></li>
+									<li>Affiliations: <span>Union Allied Contruction, Confederated Global Investments, Hydra</span></li>
+									<li>Portrayed By: <span>Vincent D'Onofrio</span></li>
+									<li>Wilson Grant Fisk is a powerful businessman whose interests in the future of Hell's Kitchen in New York City by controlling the crime waves brought him into conflict with some of his partners who began betraying him, including the Hand, and the vigilante Daredevil. Through his career as a crime lord, Fisk has grown under the belief that his actions are right, leading to his sympathy with many who oppose Daredevil. His attempt to destroy and rebuild Hell's Kitchen was thwarted.</li>
+								</ul>
+								<a href="#" class="read-more-button">read more</a>
+							</div>
+						</div>
+					</div>
+					<div class="panel" id="panel2">
+						<a href="#" class="escape-button"></a>
+						<div class="content-container">
+							<h1>behind the scene fact</h1>
+							<div class="behindscene-img"></div>
+							<div class="content-info">
+								<p>The hallway single shot fight sequence tok only two days to rehearse. It took eight to twelve run-throughs during the filming.</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-trivia" id="panel3">
+						<a href="#" class="escape-button"></a>
+						<div class="content-container">
+							<h1>can you guess what happens next?</h1>
+							<div class="trivia-container">
+								<div class="trivia-img-1">
+									<div></div>
+								</div>
+								<div class="trivia-img-2">
+									<div></div>
+								</div>
+								<div class="trivia-img-3">
+									<div></div>
+								</div>
+								<div class="trivia-img-4">
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="music-panel" id="panel4">
+						<div class="soundwave-wrap">
+							<div class="soundwave-bg-1"></div>
+							<div class="soundwave-bg-2"></div>
+							<div class="soundwave-bg-3"></div>
+							<div class="soundwave-bg">
+								<div class="shazam-container">
+									<div class="content-left"></div>
+									<div class="content-right">
+										<h6>Daredevil Main Theme</h6>
+										<p>John Paesano</p>
+										<div class="shazams">
+											<span></span>
+											<p><b>300</b> Shazams</p>
+										</div>
+										<div class="btn btn--spotify">open in spotify</div>
+										<div class="btn btn--apple">open in apple music</div>
+										<div class="btn btn--share">share</div>
+										<div class="social-buttons">
+											<div class="facebook"></div>
+											<div class="twitter"></div>
+											<div class="message"></div>
+											<div class="email"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/jquery.gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="assets/js/parallax.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
